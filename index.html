@@ -32,31 +32,33 @@
             <h1 class="title is-2 publication-title">&#128270;
               <small>
                 <!-- TODO: Add Paper Title -->
-                Paper Title<span style="font-weight:normal">:
+                Planning as Inpainting<span style="font-weight:normal">:
                   <!-- TODO: Add Paper Subtitle -->
-                  <br>Paper Subtitle</span></h1>
+                  <br>A Diffusion-Based Embodied Task Planning Framework for Environments under Uncertainty</span></h1>
               </small>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <!-- TODO: Add Authors Details (link, name) -->
-                <a href="#">Author A</a><sup>*1</sup></span>  &nbsp
+                <a href="#">Cheng-Fu Yang</a><sup>1</sup></span>  &nbsp
               <span class="author-block">
-                <a href="#">Author B</a><sup>*1</sup></span>  &nbsp
+                <a href="#">Haoyang Xu</a><sup>1</sup></span>  &nbsp
               <span class="author-block">
-                <a href="#">Author C</a><sup>2</sup>  &nbsp
+                <a href="#">Te-Lin Wu</a><sup>1</sup>  &nbsp
               </span>
               <span class="author-block">
-                <a href="#">Author D</a><sup>2,3</sup>  &nbsp
+                <a href="#">Xiaofeng Gao</a><sup>2</sup>  &nbsp
               </span>
               <span class="author-block">
-                <a href="#">Author E</a><sup>1</sup>
+                <a href="#">Kai-Wei Chang</a><sup>1</sup> &nbsp
+              </span>
+              <span class="author-block">
+                <a href="#">Feng Gao</a><sup>2</sup>
               </span>
             </div>
             <!-- TODO: Add affiliation -->
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>School A</span> &nbsp
-              <span class="author-block"><sup>2</sup>School B</span> &nbsp
-              <span class="author-block"><sup>3</sup>School C</span> <br>
+              <span class="author-block"><sup>1</sup>UCLA</span> &nbsp
+              <span class="author-block"><sup>2</sup>Amazon</span> <br>
             </div>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
@@ -69,19 +71,19 @@
             <br>
             <div class="column has-text-centered">
               <div class="publication-links">
-                <span class="link-block">
+                <!-- <span class="link-block"> -->
                   <!-- TODO: Add PDF paper -->
-                  <a href="#"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>PDF</span>
-                  </a>
-                </span>
+                  <!-- <a href="#" -->
+                     <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                    <!-- <span class="icon"> -->
+                        <!-- <i class="fas fa-file-pdf"></i> -->
+                    <!-- </span> -->
+                    <!-- <span>PDF</span> -->
+                  <!-- </a> -->
+                <!-- </span> -->
                 <span class="link-block">
                   <!-- TODO: Add Arxiv paper -->
-                  <a href="#"
+                  <a href="https://arxiv.org/abs/2312.01097"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="ai ai-arxiv"></i>
@@ -91,7 +93,7 @@
                 </span>
                 <span class="link-block">
                   <!-- TODO: Add Github Link -->
-                  <a href="#"
+                  <a href="https://github.com/joeyy5588/planning-as-inpainting"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fab fa-github"></i>
@@ -99,16 +101,16 @@
                     <span>Code</span>
                     </a>
                 </span>
-                <span class="link-block">
+                <!-- <span class="link-block"> -->
                   <!-- TODO: Add Data Link -->
-                  <a href="#"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="far fa-images"></i>
-                    </span>
-                    <span>Data</span>
-                    </a>
-                </span>
+                  <!-- <a href="#" -->
+                     <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                    <!-- <span class="icon"> -->
+                        <!-- <i class="far fa-images"></i> -->
+                    <!-- </span> -->
+                    <!-- <span>Data</span> -->
+                    <!-- </a> -->
+                <!-- </span> -->
                 <span class="link-block">
                   <a href="#BibTeX"
                      class="external-link button is-normal is-rounded is-dark">
@@ -167,7 +169,7 @@
           <div class="content has-text-justified">
             <p>
               <!-- TODO: Add Abstract -->
-              Abstract goes here
+              Task planning for embodied AI has been one of the most challenging problems where the community does not meet a consensus in terms of formulation. In this paper, we aim to tackle this problem with a unified framework consisting of an end-to-end trainable method and a planning algorithm. Particularly, we propose a task-agnostic method named 'planning as in-painting'. In this method, we use a Denoising Diffusion Model (DDM) for plan generation, conditioned on both language instructions and perceptual inputs under partially observable environments. Partial observation often leads to the model hallucinating the planning. Therefore, our diffusion-based method jointly models both state trajectory and goal estimation to improve the reliability of the generated plan, given the limited available information at each step. To better leverage newly discovered information along the plan execution for a higher success rate, we propose an on-the-fly planning algorithm to collaborate with the diffusion-based planner. The proposed framework achieves promising performances in various embodied AI tasks, including vision-language navigation, object manipulation, and task planning in a photorealistic virtual environment. 
             </p>
             <!-- TODO: Add Abstract Video -->
           <div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/K4TOrB7at0Y?si=iLpaGdm0wysvDQ4X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
@@ -544,7 +546,13 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{
+      <pre><code></code>@misc{yang2023planning,
+        title={Planning as In-Painting: A Diffusion-Based Embodied Task Planning Framework for Environments under Uncertainty}, 
+        author={Cheng-Fu Yang and Haoyang Xu and Te-Lin Wu and Xiaofeng Gao and Kai-Wei Chang and Feng Gao},
+        year={2023},
+        eprint={2312.01097},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
   }</code></pre>
     </div>
   </section>  
